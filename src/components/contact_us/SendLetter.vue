@@ -156,6 +156,8 @@
                         .catch(function (error) {
                             console.log(error);
                         });
+                } else {
+                    document.body.style.overflow = 'hidden';
                 }
             },
             repaintField(e) {
@@ -167,12 +169,111 @@
             },
             cleanErrors() {
                 this.errors = [];
+                document.body.style.overflow = 'auto';
             }
         }
     }
 </script>
 
 <style lang="scss">
+    .send_letter {
+        &__row {
+            color: #000;
+            font-size: 1em;
+            line-height: 3.75em;
+            border-bottom: 2px solid #000;
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            @media screen and (max-width: 768px) {
+                grid-template-columns: 4fr 8fr;
+            }
+            &.active {
+                color: #fff;
+                border-bottom-color: #fff;
+                .send_letter__input {
+                    color: #fff;
+                }
+            }
+            &.error {
+                color: #d65454;
+                border-bottom-color: #d65454;
+                .send_letter__input {
+                    color: #d65454 !important;
+                }
+            }
+        }
+        &__label {
+            &--checkbox {
+                color: #fff;
+                font-size: 1em;
+                line-height: 2em;
+                cursor: pointer;
+            }
+        }
+        &__input {
+            background-color: transparent !important;
+            border: none;
+            outline: none;
+            color: #000;
+            font-size: 1em;
+            line-height: 3.75em;
+            &:invalid {
+                border-color: red;
+            }
+            &::placeholder {
+                color: #000;
+                opacity: .3;
+            }
+        }
+        &__checkbox {
+            position: absolute;
+            opacity: 0;
+
+            &:checked + label svg path {
+                stroke-dashoffset: 0;
+            }
+            & + .send_letter__label--checkbox {
+                display: block;
+                border-radius: .05em;
+                cursor: pointer;
+                transition: all .2s ease;
+                &:active {
+                    border-radius: .25em;
+                }
+                svg {
+                    pointer-events: none;
+                    width: .75em;
+                    height: .75em;
+                    background-color: #fff;
+                    path {
+                        fill: none;
+                        stroke: #333;
+                        stroke-width: 4px;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-dasharray: 100;
+                        stroke-dashoffset: 101;
+                        transition: all 350ms cubic-bezier(1,0,.37,.91);
+                    }
+                }
+            }
+        }
+        &__btn {
+            margin-top: 5%;
+            font-family: 'Suisse Intl', sans-serif;
+            color: #fff;
+            font-size: .75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: none;
+            background-color: #262626;
+            padding: 2.75em 5.5em;
+            cursor: pointer;
+        }
+    }
+
+
     .modal {
         z-index: 999;
         position: fixed;
