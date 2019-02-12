@@ -72,6 +72,8 @@
                     type="submit"
                     value="Get in touch"
                     class="send_letter__btn"
+                    :disabled="validated"
+                    :class="{ 'send_letter__btn--disabled': validated  }"
                 >
             </p>
         </form>
@@ -102,6 +104,7 @@
         name: "SendLetter",
         data() {
             return {
+                validated: false,
                 errors: [],
                 form: {
                     name: null,
@@ -145,6 +148,7 @@
                 }
 
                 if( !this.errors.length ) {
+                    this.validated = true;
                     axios.post('http://httpbin.org/post', {
                         name: this.form.name,
                         phone: this.form.phone,
@@ -269,7 +273,11 @@
             border: none;
             background-color: #262626;
             padding: 2.75em 5.5em;
-            cursor: pointer;
+            cursor: pointer;transition: all .5s ease-in-out;
+            &--disabled {
+                cursor: default;
+                opacity: .5;
+            }
         }
     }
 
