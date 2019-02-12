@@ -1,0 +1,15 @@
+<template>
+    <main>
+        <slot></slot>
+    </main>
+</template>
+
+<script>
+    export default {
+        name: "WrapperSlot"
+    }
+</script>
+
+<style scoped>
+
+</style>

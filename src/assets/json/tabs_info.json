@@ -1,0 +1,54 @@
+[
+  {
+    "name": "kiev",
+    "title": "Global Message Services Kiev LLC",
+    "location": {
+      "lat": 50.445,
+      "lng": 30.517
+    },
+    "text": [
+      "Kuiv, Stepan Bandera, 33",
+      "02066",
+      "Ukraine"
+    ]
+  },
+  {
+    "name": "new york",
+    "title": "Global Message Services USA LLC",
+    "location": {
+      "lat": 40.69,
+      "lng": -74.0059728
+    },
+    "text": [
+      "New York, Stepan Bandera, 33",
+      "02066",
+      "USA"
+    ]
+  },
+  {
+    "name": "guangzhou",
+    "title": "Global Message Services China LLC",
+    "location": {
+      "lat": 23.125,
+      "lng": 113.263457
+    },
+    "text": [
+      "Guangzhou, Stepan Bandera, 33",
+      "02066",
+      "China"
+    ]
+  },
+  {
+    "name": "barcelona",
+    "title": "Global Message Services Spain LLC",
+    "location": {
+      "lat": 41.377,
+      "lng": 2.1734034999999494
+    },
+    "text": [
+      "Barcelona, Stepan Bandera, 33",
+      "02066",
+      "Spain"
+    ]
+  }
+]

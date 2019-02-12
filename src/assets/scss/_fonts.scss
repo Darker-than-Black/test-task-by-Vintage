@@ -1,0 +1,14 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('#{$url}.woff') format('woff'),
+    url('#{$url}.woff2') format('woff2'),
+    url('#{$url}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+@include font-face('Suisse Intl', '../fonts/SuisseIntl', normal);
+@include font-face('Suisse Intl', '../fonts/SuisseIntl-Light', lighter);
+@include font-face('Suisse Intl', '../fonts/SuisseIntl-SemiBold', 600);
