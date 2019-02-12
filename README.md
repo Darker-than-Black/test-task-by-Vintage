@@ -49,15 +49,12 @@
   <li>
     <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/ContactsUs.vue">ContactsUs.vue</a> - містить два компоненти <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/contact_us/SendLetter.vue">SendLetter.vue</a> та <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/contact_us/SubInfo.vue">SubInfo.vue</a>
   </li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>
+    <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/tree/master/src/components/slots">src/components/slots</a> - папка, в якій *.vue файли зі слотами для повторно використовуваного коду (розмітки).
+  </li>
 </ul>
 
+<hr />
 
-<ul></ul>
-<li></li>
-<b></b>
-<i></i>
+<p>Додаток тестувався в браузерах: Chrome, Opera, FireFox, Edge</p>
+<p>Та перевірявся на розширенні екрану від 320px до 4k монітору.</p>
