@@ -34,16 +34,26 @@
 
 <h3>Структура файлів</h3>
 <ul>
-  <li>main.js / App.vue - стандертні файли </li>
-  <li>src - початкові файли проекту</li>
   <li>
-    <ol>
-      <li>src/assets - </li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ol>
+    <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/main.js">main.js</a> / <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/App.vue" >App.vue </a>- стандертні файли 
   </li>
+  <li>
+    <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/tree/master/src/assets">src/assets </a> - файли картинок, шрифтів, глобальних стилей, та <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/tree/master/src/assets/json">json</a> файли (<a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/assets/json/googleMapStyle.json">стилі GoogleMapAPI</a>, та <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/assets/json/tabs_info.json">винесена окремо інформаія наповнення табів</a>)  
+  </li>
+  <li>
+    <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/Contacts.vue">Contacts.vue</a> - шаблон для першого блоку, що містить компоеенти <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/contacts/Headquarters.vue">Headquarters.vue</a> та <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/contacts/Support.vue">Support.vue</a>
+  </li>
+  <li>
+    <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/Map.vue">Map.vue</a> - шаблон другого блоку, містить  <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/map/GoogleMap.vue">компонент GoogleMap.vue</a> (для крати) та <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/map/TabsInfo.vue">TabsInfo.vue</a> ( компонент для табів, який зсилається на два слоти <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/map/Tabs.vue">Tabs</a> і <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/map/Tab.vue">Tab</a>, для реалізації табуляції).
+  </li>
+  <li>
+    <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/ContactsUs.vue">ContactsUs.vue</a> - містить два компоненти <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/contact_us/SendLetter.vue">SendLetter.vue</a> та <a href="https://github.com/Darker-than-Black/test-task-by-Vintage/blob/master/src/components/contact_us/SubInfo.vue">SubInfo.vue</a>
+  </li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
 
 
