@@ -20,7 +20,7 @@ Vue.config.productionTip = false;
 
 Vue.use({ styles, animate });
 Vue.component( 'wrapper-s', WrapperSlot );
-Vue.component( 'a-container-s', ContainerSlot );
+Vue.component( 'a-container-s', ArticleContainerSlot );
 Vue.component( 'container-s', ContainerSlot );
 Vue.component( 'col-s', ColSlot );
 Vue.component( 'row-s', RowSlot );

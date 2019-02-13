@@ -45,11 +45,8 @@
             @media screen and (max-width: 599px) {
                 min-height: 40vh;
             }
-            @media screen and (max-width: 767px) {
-                min-height: 30vh;
-            }
             @media screen and (max-width: 992px) {
-                min-height: 25vh;
+                min-height: 30vh;
             }
         }
         &__link {
