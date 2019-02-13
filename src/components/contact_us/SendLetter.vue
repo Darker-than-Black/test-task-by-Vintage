@@ -118,6 +118,7 @@
             checkForm: function (e) {
                 this.cleanErrors();
                 e.preventDefault();
+                let context = this;
 
                 if (!this.form.name) {
                     this.errors.push('Enter your name.');
@@ -149,18 +150,21 @@
 
                 if( !this.errors.length ) {
                     this.validated = true;
-                    axios.post('http://httpbin.org/post', {
+                    axios.post('https://httpbin.org/post', {
                         name: this.form.name,
                         phone: this.form.phone,
                         email: this.form.mail
                     })
                         .then(function (response) {
                             console.log(response);
+                            context.validated = false;
                         })
                         .catch(function (error) {
                             console.log(error);
+                            context.validated = false;
                         });
                 } else {
+                    this.validated = false;
                     document.body.style.overflow = 'hidden';
                 }
             },
